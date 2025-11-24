@@ -29,7 +29,24 @@
   <header id="site-header" role="banner">
 
     <div id="promo-ticker" aria-live="polite" aria-atomic="true">
-      <p>Black Friday - До 30% отстъпка</p>
+      <div class="bf-blur-right"></div>
+
+      <p>
+        <svg class="bf-sparkle" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 3v18M3 12h18M6.34 6.34l11.32 11.32M17.66 6.34L6.34 17.66"/>
+        </svg>
+
+        <span class="bf-label">BLACK FRIDAY:</span>
+        <span class="bf-highlight">Отстъпка в целия сайт</span>
+        <span>до</span>
+        <span class="bf-price">30%</span>
+
+        <svg class="bf-sparkle" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 3v18M3 12h18M6.34 6.34l11.32 11.32M17.66 6.34L6.34 17.66"/>
+        </svg>
+      </p>
+
+      <div class="bf-bottom-line"></div>
     </div>
 
     <div class="header-top">
@@ -56,6 +73,7 @@
               <li role="none"><a role="menuitem" href="/bg/terms-of-sale/">Правила за закупуване</a></li>
               <li role="none"><a role="menuitem" href="/bg/delivery/">Доставка</a></li>
               <li role="none"><a role="menuitem" href="/bg/privacy-policy/">Поверителност</a></li>
+              <li role="none"><a role="menuitem" href="/bg/faq">Често задавани въпроси</a></li>
             </ul>
           </li>
         </ul>
@@ -128,7 +146,6 @@
             <span itemprop="price">37.35</span> лв.
           </div>
           <button type="button" class="add-to-cart" aria-label="Добави CHOCO в количката" data-product-id="356">
-            Добави
           </button>
         </article>
 
@@ -346,6 +363,46 @@
     <section id="reviews" aria-labelledby="reviews-title">
       <h2 id="reviews-title">Потребителски отзиви</h2>
       <div class="reviews-slider" role="region" aria-roledescription="carousel" aria-label="Слайд ревюта">
+
+        <div class="review-card">
+          <p class="review-text">
+            Просто страхотни продукти! CHOCO маслото ми помогна да постигна перфектен тен без да се изгарям. Ароматът е невероятен и кожата ми сияе.
+          </p>
+          <div class="review-author">
+            <div class="review-avatar">М</div>
+            <div class="review-info">
+              <h4>Мария Петрова</h4>
+              <div class="review-rating">★★★★★</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <p class="review-text">
+            GROW серумът наистина работи! След месец използване забелязах видима разлика - косата ми расте по-бързо и изглежда по-здрава.
+          </p>
+          <div class="review-author">
+            <div class="review-avatar">Е</div>
+            <div class="review-info">
+              <h4>Елена Димитрова</h4>
+              <div class="review-rating">★★★★★</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <p class="review-text">
+            Качеството на продуктите е на високо ниво! Харесвам, че са натурални и без вредни съставки. Определено си заслужава.
+          </p>
+          <div class="review-author">
+            <div class="review-avatar">И</div>
+            <div class="review-info">
+              <h4>Иван Георгиев</h4>
+              <div class="review-rating">★★★★★</div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -391,36 +448,152 @@
   </div>
 
   <footer id="site-footer" role="contentinfo" aria-labelledby="footer-title">
-    <h2 id="footer-title" class="visually-hidden">Долна част на сайта</h2>
+      <h2 id="footer-title" class="visually-hidden">Долна част на сайта</h2>
 
-    <div class="footer-payments">
-      <p>Сигурно плащане с:</p>
-      <img src="/bg/wp-content/uploads/payment-icons.png" alt="Visa, MasterCard, PayPal" />
-    </div>
 
-    <nav aria-label="Footer навигация">
-      <ul>
-        <li><a href="/bg/store/">Продукти</a></li>
-        <li><a href="/bg/loyalty/">CLUB</a></li>
-        <li><a href="/bg/contacts/">Контакти</a></li>
-        <li><a href="/bg/terms-of-sale/">Правила за закупуване</a></li>
-      </ul>
-    </nav>
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h3>Информация</h3>
+          <ul>
+            <li><a href="/bg/about-us/">За нас</a></li>
+            <li><a href="/bg/contacts/">Контакти</a></li>
+            <li><a href="#stores">Магазини</a></li>
+            <li><a href="#careers">Кариери</a></li>
+          </ul>
+        </div>
 
-    <div class="footer-social" aria-label="Следвайте ни">
-      <h4>Последвайте ни</h4>
-      <ul>
-        <li><a href="https://www.facebook.com/cocosolisbg/">Facebook</a></li>
-        <li><a href="https://www.instagram.com/cocosolis.official/">Instagram</a></li>
-      </ul>
-    </div>
+        <div class="footer-section">
+          <h3>Помощ</h3>
+          <ul>
+            <li><a href="#faq">Често задавани въпроси</a></li>
+            <li><a href="/bg/delivery/">Доставка</a></li>
+            <li><a href="#returns">Връщания</a></li>
+            <li><a href="#payment">Плащане</a></li>
+          </ul>
+        </div>
 
-    <address>
-      Имейл: <a href="mailto:bg@cocosolis.com">bg@cocosolis.com</a>
-    </address>
+        <div class="footer-section">
+          <h3>Продукти</h3>
+          <ul>
+            <li><a href="#suntan-body">Масла за тен</a></li>
+            <li><a href="#hair">Грижа за коса</a></li>
+            <li><a href="#skin">Грижа за тяло</a></li>
+            <li><a href="#face">Грижа за лице</a></li>
+          </ul>
+        </div>
 
-    <small>© 2016 - 2025 COCOSOLIS | All rights reserved</small>
-  </footer>
+        <div class="footer-section">
+          <h3>Контакти</h3>
+          <address style="font-style: normal">
+            <p>
+              <a href="https://www.google.com/maps?q=бул.+Никола+Вапцаров+53В,+София+1407,+България"
+                 target="_blank"
+                 rel="noopener noreferrer">
+                бул. Никола Вапцаров 53В<br />
+                София 1407, България
+              </a>
+            </p>
+            <p>
+              <a href="tel:+359123456789">+359 123 456 789</a>
+            </p>
+            <p>
+              <a href="mailto:info@cocosolis.com">info@cocosolis.com</a>
+            </p>
+          </address>
+
+          <div class="footer-social" aria-label="Следвайте ни">
+            <h4>Последвайте ни</h4>
+            <ul>
+              <li><a href="https://www.facebook.com/cocosolisbg/">Facebook</a></li>
+              <li><a href="https://www.instagram.com/cocosolis.official/">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 COCOSOLIS. Всички права запазени.</p>
+        <nav aria-label="Правна информация">
+          <ul>
+            <li><a href="/bg/privacy-policy/">Поверителност</a></li>
+            <li><a href="#terms">Условия за ползване</a></li>
+            <li><a href="#cookies">Бисквитки</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script>
+    // Responsive header behavior
+    document.addEventListener('DOMContentLoaded', function() {
+      const navToggle = document.getElementById('nav-toggle');
+      const mainNavList = document.getElementById('main-nav-list');
+
+      if (navToggle && mainNavList) {
+        navToggle.addEventListener('click', function() {
+          const isExpanded = this.getAttribute('aria-expanded') === 'true';
+          this.setAttribute('aria-expanded', !isExpanded);
+          mainNavList.style.display = isExpanded ? 'none' : 'flex';
+        });
+      }
+
+      // Close menu when clicking outside on mobile
+      document.addEventListener('click', function(event) {
+        if (window.innerWidth <= 768) {
+          const isClickInsideNav = mainNavList.contains(event.target) ||
+                                  navToggle.contains(event.target);
+
+          if (!isClickInsideNav && mainNavList.style.display === 'flex') {
+            mainNavList.style.display = 'none';
+            navToggle.setAttribute('aria-expanded', 'false');
+          }
+        }
+      });
+
+      // Handle window resize
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 768) {
+          mainNavList.style.display = 'flex';
+          navToggle.setAttribute('aria-expanded', 'false');
+        } else {
+          mainNavList.style.display = 'none';
+        }
+      });
+    });
+    </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const promoTicker = document.getElementById('promo-ticker');
+      const siteHeader = document.getElementById('site-header');
+      let lastScrollTop = 0;
+      let isTickerHidden = false;
+
+      window.addEventListener('scroll', function() {
+        const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (currentScroll > lastScrollTop && currentScroll > 50) {
+          if (!isTickerHidden) {
+            promoTicker.style.maxHeight = '0';
+            promoTicker.style.padding = '0 1rem';
+            promoTicker.style.opacity = '0';
+            isTickerHidden = true;
+          }
+        } else if (currentScroll < lastScrollTop || currentScroll <= 50) {
+          if (isTickerHidden) {
+            promoTicker.style.maxHeight = '44px';
+            promoTicker.style.padding = '0.75rem 1rem';
+            promoTicker.style.opacity = '1';
+            isTickerHidden = false;
+          }
+        }
+
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+      }, false);
+    });
+  </script>
+
+
 
 </body>
 </html>
