@@ -48,64 +48,60 @@
     </div>
 
   <header id="site-header" role="banner">
+      <div class="header-top">
+        <a id="logo" href="/bg" aria-label="COCOSOLIS България - Начало">
+          <img src="/bg/wp-content/themes/cocosolis/public/static/images/cocosolis-logo.svg"
+               alt="COCOSOLIS България" />
+        </a>
 
-    <div class="header-top">
+        <nav id="main-nav" aria-label="Основна навигация">
+          <button id="nav-toggle" aria-expanded="false" aria-controls="main-nav-list">Меню</button>
 
-      <a id="logo" href="/bg" aria-label="COCOSOLIS България - Начало">
-        <img src="/bg/wp-content/themes/cocosolis/public/static/images/cocosolis-logo.svg"
-             alt="COCOSOLIS България" />
-      </a>
+          <ul id="main-nav-list">
+            <li><a href="/bg/" aria-current="page">Начало</a></li>
+            <li><a href="/bg/store/">Продукти</a></li>
+            <li><a href="/bg/loyalty/">CLUB</a></li>
+            <li><a href="/bg/about-us/">За нас</a></li>
+            <li><a href="/bg/contacts/">Контакти</a></li>
 
-      <nav id="main-nav" aria-label="Основна навигация">
+            <li class="more-menu-item">
+              <button aria-haspopup="true" aria-expanded="false">Още</button>
+              <ul class="submenu" role="menu" aria-label="Още информация">
+                <li role="none"><a role="menuitem" href="/bg/terms-of-sale/">Правила за закупуване</a></li>
+                <li role="none"><a role="menuitem" href="/bg/delivery/">Доставка</a></li>
+                <li role="none"><a role="menuitem" href="/bg/privacy-policy/">Поверителност</a></li>
+                <li role="none"><a role="menuitem" href="/bg/faq">Често задавани въпроси</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
 
-        <button id="nav-toggle" aria-expanded="false" aria-controls="main-nav-list">Меню</button>
+        <div class="header-actions">
+          <button id="search-open"
+              aria-controls="search-region"
+              aria-expanded="false"
+              aria-label="Отвори търсачката">
+           Търси
+          </button>
 
-        <ul id="main-nav-list">
-          <li><a href="/bg/" aria-current="page">Начало</a></li>
-          <li><a href="/bg/store/">Продукти</a></li>
-          <li><a href="/bg/loyalty/">CLUB</a></li>
-          <li><a href="/bg/about-us/">За нас</a></li>
-          <li><a href="/bg/contacts/">Контакти</a></li>
+          <a href="#account" aria-label="Профил">Профил</a>
+          <a href="/cart" aria-label="Количка">Количка</a>
+        </div>
+      </div>
 
-          <li>
-            <button aria-haspopup="true" aria-expanded="false">Още</button>
-            <ul class="submenu" role="menu" aria-label="Още информация">
-              <li role="none"><a role="menuitem" href="/bg/terms-of-sale/">Правила за закупуване</a></li>
-              <li role="none"><a role="menuitem" href="/bg/delivery/">Доставка</a></li>
-              <li role="none"><a role="menuitem" href="/bg/privacy-policy/">Поверителност</a></li>
-              <li role="none"><a role="menuitem" href="/bg/faq">Често задавани въпроси</a></li>
-            </ul>
-          </li>
+      <nav id="header-categories" aria-label="Категории продукти">
+        <ul>
+          <li><a href="#bundles">Промо пакети</a></li>
+          <li><a href="#skin">Кожа</a></li>
+          <li><a href="#hair">Коса</a></li>
+          <li><a href="#face">Лице</a></li>
+          <li><a href="#self-tanner">Автобронзанти</a></li>
+          <li><a href="#shimmer">Блясък</a></li>
+          <li><a href="#suntan-body">Тен</a></li>
+          <li><a href="#spf">SPF</a></li>
         </ul>
       </nav>
-
-      <div class="header-actions">
-        <button id="search-open"
-            aria-controls="search-region"
-            aria-expanded="false"
-            aria-label="Отвори търсачката">
-         Търси
-        </button>
-
-        <a href="#account" aria-label="Профил">Профил</a>
-        <a href="/cart" aria-label="Количка">Количка</a>
-      </div>
-    </div>
-
-    <nav id="header-categories" aria-label="Категории продукти">
-      <ul>
-        <li><a href="#bundles">Промо пакети</a></li>
-        <li><a href="#skin">Кожа</a></li>
-        <li><a href="#hair">Коса</a></li>
-        <li><a href="#face">Лице</a></li>
-        <li><a href="#self-tanner">Автобронзанти</a></li>
-        <li><a href="#shimmer">Блясък</a></li>
-        <li><a href="#suntan-body">Тен</a></li>
-        <li><a href="#spf">SPF</a></li>
-      </ul>
-    </nav>
-
-  </header>
+    </header>
 
   <div id="search-region" role="search" hidden>
     <form action="/bg/" method="get" aria-label="Търсене в сайта">
@@ -447,83 +443,49 @@
     </div>
   </div>
 
-  <footer id="site-footer" role="contentinfo" aria-labelledby="footer-title">
-      <h2 id="footer-title" class="visually-hidden">Долна част на сайта</h2>
+<footer id="site-footer" role="contentinfo" aria-labelledby="footer-title">
+  <h2 id="footer-title" class="visually-hidden">Долна част на сайта</h2>
+
+  <div class="footer-social" aria-label="Следвайте ни">
+    <h3>Последвайте ни</h3>
+    <ul class="social-icons">
+      <li>
+        <a href="https://www.facebook.com/cocosolisbg/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+            />
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/cocosolis.official/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <!-- Instagram SVG -->
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
+            />
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Долна част с разделител -->
+  <div class="footer-bottom">
+    <hr class="footer-divider">
+    <div class="footer-bottom-content">
+      <p>&copy; 2025 COCOSOLIS. Всички права запазени.</p>
+      <nav aria-label="Правна информация">
+        <ul>
+          <li><a href="/bg/privacy-policy/">Поверителност</a></li>
+          <li><a href="#terms">Условия за ползване</a></li>
+          <li><a href="#cookies">Бисквитки</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</footer>
 
 
-      <div class="footer-grid">
-        <div class="footer-section">
-          <h3>Информация</h3>
-          <ul>
-            <li><a href="/bg/about-us/">За нас</a></li>
-            <li><a href="/bg/contacts/">Контакти</a></li>
-            <li><a href="#stores">Магазини</a></li>
-            <li><a href="#careers">Кариери</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-section">
-          <h3>Помощ</h3>
-          <ul>
-            <li><a href="#faq">Често задавани въпроси</a></li>
-            <li><a href="/bg/delivery/">Доставка</a></li>
-            <li><a href="#returns">Връщания</a></li>
-            <li><a href="#payment">Плащане</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-section">
-          <h3>Продукти</h3>
-          <ul>
-            <li><a href="#suntan-body">Масла за тен</a></li>
-            <li><a href="#hair">Грижа за коса</a></li>
-            <li><a href="#skin">Грижа за тяло</a></li>
-            <li><a href="#face">Грижа за лице</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-section">
-          <h3>Контакти</h3>
-          <address style="font-style: normal">
-            <p>
-              <a href="https://www.google.com/maps?q=бул.+Никола+Вапцаров+53В,+София+1407,+България"
-                 target="_blank"
-                 rel="noopener noreferrer">
-                бул. Никола Вапцаров 53В<br />
-                София 1407, България
-              </a>
-            </p>
-            <p>
-              <a href="tel:+359123456789">+359 123 456 789</a>
-            </p>
-            <p>
-              <a href="mailto:info@cocosolis.com">info@cocosolis.com</a>
-            </p>
-          </address>
-
-          <div class="footer-social" aria-label="Следвайте ни">
-            <h4>Последвайте ни</h4>
-            <ul>
-              <li><a href="https://www.facebook.com/cocosolisbg/">Facebook</a></li>
-              <li><a href="https://www.instagram.com/cocosolis.official/">Instagram</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-          <div class="footer-bottom-content">
-            <p>&copy; 2025 COCOSOLIS. Всички права запазени.</p>
-            <nav aria-label="Правна информация">
-              <ul>
-                <li><a href="/bg/privacy-policy/">Поверителност</a></li>
-                <li><a href="#terms">Условия за ползване</a></li>
-                <li><a href="#cookies">Бисквитки</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-    </footer>
 
     <script>
     // Responsive header behavior
